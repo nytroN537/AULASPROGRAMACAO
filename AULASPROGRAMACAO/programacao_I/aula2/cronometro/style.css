@@ -1,120 +1,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    background: #242424;
-    min-height: 100vh;
-  }
-
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: #242424;
+  min-height: 100vh;
+}
 
 div#paralelograma {
-    background-color: #1f1f1f;
-    width: 500px;
-    height: 500px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 1px aqua; 
-    position: absolute;
-    margin-top: 2vh;
-    z-index: -1;
+  background-color: #1f1f1f;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 1px aqua;
+  position: absolute;
+  margin-top: 2vh;
+  z-index: -1;
 }
 
 section {
-    display: flex;
-    background-color: #272727;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px;
-    padding: 30px ;
-    color: aqua;
-    z-index: 1;
+  display: flex;
+  background-color: #272727;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px;
+  padding: 30px;
+  color: aqua;
+  z-index: 1;
 }
 
-h1{
-    margin-bottom: 70px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
+h1 {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
 }
 
-button{
-    background: aqua;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    padding: 0;
-    margin: 25px;
-    margin-left: 50px;
-    width: 10rem;
-    height: 2rem;
-    box-shadow: 1px 1px 10px aqua;
+button {
+  background: aqua;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 0;
+  margin: 25px;
+  margin-left: 75px;
+  width: 5rem;
+  height: 2rem;
+  box-shadow: 1px 1px 10px aqua;
 }
 
-input{
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin: 1px;
-    width: 10rem;
-    padding: 5px;
-    
+input {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 1px;
+  width: 10rem;
+  padding: 5px;
+  margin-left: 35px;
 }
 
-fieldset{
-    border: none;
+.valorum {
+  border-radius: 10px;
+  height: 40px;
+  width: 100px;
+  margin: 5px;
+  padding: 0;
+  margin-left: 65px;
+  display: block;
+  align-items: center;
+  justify-content: center;
 }
 
-fieldset:nth-child(2) {
-    display: flex;
+.valordois {
+  border-radius: 10px;
+  height: 40px;
+  width: 100px;
+  margin: 5px;
+  padding: 0;
+  margin-left: 65px;
+  display: block;
+  align-items: center;
+  justify-content: center;
 }
-  
-fieldset:nth-child(4) {
-    display: flex;
-    padding: 1px;
+
+.resultadofinal {
+  border-radius: 10px;
+  height: 40px;
+  width: 100px;
+  margin: 5px;
+  padding: 0;
+  margin-left: 65px;
+  display: block;
+  align-items: center;
+  justify-content: center;
 }
-  
-fieldset:nth-child(5) {
-    display: flex;
+
+.valor1 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  padding: 5px;
+}
+
+.valor2 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  padding: 5px;
+}
+
+.calcular {
+  color: black;
+  font-weight: 550;
+}
+
+.resultado {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 1080px) {
+  div#parallelogram {
+    height: 690px;
+  }
+  section img {
+    display: none;
+  }
+}
+
+@media only screen and (max-widht: 510px) {
+  div#parallelogram {
+    display: none;
+  }
+  section {
+    min-width: 95vw;
+  }
+
+  form {
     width: 100%;
-    margin-top: 20px;
-    padding: 0
+  }
+
+  button {
+    width: 100%;
+    margin-left: none;
+  }
 }
- 
-.valor1{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: grid;
-    padding: 5px;
-}
-
-.valor2{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: grid;
-    padding: 5px;
-}
-
-.calcular{
-    color: #fff;
-    text-shadow: #1f1f1f;
-}
-
-.resultado{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: grid;
-}
-
-
-
-

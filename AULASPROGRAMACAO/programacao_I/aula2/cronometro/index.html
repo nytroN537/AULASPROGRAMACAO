@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <script src="./codigo.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="paralelograma"></div>
     <section>
-        <form action="#" method="post">
-            <h1>Calculadora Online</h1>
-            <fieldset>
-                <div class="container">
-                    <label class="valor1">Valor 1</label>
-                    <input type="number" id="valor1">
-                </div>
-            </fieldset>
-            <fieldset>
-                <div class="container">
-                    <label class="valor2">Valor 2</label>
-                    <input type="number" id="valor2">
-                </div>
-            </fieldset>
-            <button type="button" onclick="soma()" class="calcular">Calcular</button>
-            <fieldset>
-                <div class="container">
-                    <label class="resultado">Resultado</label>
-                    <input type="number" id="resultado">
-                </div>
-            </fieldset>
-        </form>
+      <form action="#" method="post">
+        <h1>Calculadora Online</h1>
+        <div class="container">
+          <fieldset class="valorum">
+            <label class="valor1">Valor 1</label>
+          </fieldset>
+          <input type="number" id="valor1" />
+        </div>
+        <div class="container">
+          <fieldset class="valordois">
+            <label class="valor2">Valor 2</label>
+          </fieldset>
+          <input type="number" id="valor2" />
+        </div>
+        <button type="button" onclick="soma()" class="calcular">
+          Calcular
+        </button>
+        <div class="container">
+          <fieldset class="resultadofinal">
+            <label class="resultado">Resultado</label>
+          </fieldset>
+          <input type="number" id="resultado" />
+        </div>
+      </form>
     </section>
-</body>
+  </body>
 </html>
