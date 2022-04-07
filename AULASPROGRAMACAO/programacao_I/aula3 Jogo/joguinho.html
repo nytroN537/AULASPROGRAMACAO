@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joguinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="entrada">
+        <h1>Escolha uma Opcao</h1>
+    </div>
+
+
+    <div class="containers">
+        <div class="container">
+            <div class="image-hand">
+                <img src="Icones/icons8-hand-rock-100.png">
+            </div>
+            <div class="Papel">
+                <h1 class="texto-papel">Pedra</h1>
+                <button class="escolha1" onclick="jogar(1)" >Escolher Pedra</button>
+            </div>
+        </div>
+    
+    
+        <div>
+            <div class="container2">
+                <div class="image-rock">
+                    <img src="Icones/icons8-hand-100.png">
+                </div>
+                <div class="Papel">
+                    <h1 class="texto-papel">Papel</h1>
+                    <button class="escolha2" onclick="jogar(2)">Escolher Papel</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="container3">
+                <div class="image-paper">
+                    <img src="Icones/icons8-hand-scissors-100.png">
+                </div>
+                <div class="Papel">
+                    <h1 class="texto-papel">Tesoura</h1>
+                    <button class="escolha3" onclick="jogar(3)">Escolher Tesoura</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="Status">
+        <div>
+            <h1 class="Partidas">Partidas Jogadas</h1>
+            <input id="inputTotal">
+        </div>
+    
+        <div>
+            <h1 class="Derrotas">Derrotas</h1>
+            <input id="inputDerrotas">
+        </div>
+
+        <div>
+            <h1 class="Vitorias">Vitorias</h1>
+            <input id="inputVitorias">
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="jogo.js"></script>
