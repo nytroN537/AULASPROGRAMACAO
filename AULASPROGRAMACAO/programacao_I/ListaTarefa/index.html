@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var count = 0;
+        $(".add").click(function () {
+          var inputval = $(".form").val()
+          if (inputval != '') {
+            count ++;
+            $(".lista-tarefa").append('<li><div class="cont-esquerd"><input       type="checkbox" id="check-'+count+'" name="" /><label for="check-'+count+'"></ label><span>'+inputval+'</span></div><span class="remove"> <i  class="material-icons">delete</i></span></li>');
+    }
+    $(".form").val('');
+  })
+
+  $(document).on('change', 'input[type="checkbox]', function(){
+    if ($(this).is(':checked')){
+      $(this).closest("li").children(".remove").addClass("active");
+    } else{
+      $(this).closest("li").children(".remove").removeClass("active");
+    }
+  })
+
+  $(document).on('click', '.remove', function(){
+    $(this).parent().remove();
+  })
+})
+    </script>
+
+  </head>
+  <body>
+
+    <div class="titulo">
+      <h1>Uma lista de tarefas simples</h1>
+    </div>
+
+
+    <div class="container">
+      <div class="input">
+        <input type="text" class="form" placeholder="Nova Tarefa" name="" />
+        <div class="add"> <i class="material-icons">add</i></div>
+    </div>
+
+    <ul class="lista-tarefa">
+    </ul>
+  </body>
+</html>
